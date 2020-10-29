@@ -1,32 +1,32 @@
-# Testing
+# Testes
 
-## Introduction
+## Introdução
 
-When it comes to building reliable applications, tests can play a critical role in an individual or team's ability to build new features, refactor code, fix bugs, etc. While there are many schools of thought with testing, there are three categories often discussed in the context of web applications:
+Quando se trata de construir aplicativos confiáveis, os testes podem desempenhar um papel crítico na capacidade de um indivíduo ou equipe de construir novos recursos, refatorar código, corrigir bugs, etc. Embora existam muitas escolas de pensamento sobre o testes, há três categorias frequentemente discutidas no contexto das aplicações web:
 
-- Unit Testing
-- Component Testing
-- End-To-End (E2E) Testing
+- Testes Unitários
+- Testes de Componente
+- Testes de ponta a ponta (End-To-End Testing - E2E)
 
-This section aims to provide guidance to navigating the testing ecosystem and choosing the right tools for your Vue application or component library.
+Esta seção tem como objetivo fornecer orientação para navegar no ecossistema de testes e escolher as ferramentas certas para sua aplicação Vue ou biblioteca de componentes.
 
-## Unit Testing
+## Testes Unitários
 
-### Introduction
+### Introdução
 
-Unit tests allow you to test individual units of code in isolation. The purpose of unit testing is to provide developers with confidence in their code. By writing thorough, meaningful tests, you achieve the confidence that as new features are built or your code is refactored your application will remain functional and stable.
+Os testes unitários permitem que você teste unidades individuais de código isoladamente. O objetivo do teste unitário é fornecer aos desenvolvedores confiança em seu código. Ao escrever testes completos e significativos, você obtém a confiança de que, conforme novos recursos são construídos ou seu código é refatorado, seu aplicativo permanecerá funcional e estável.
 
-Unit testing a Vue application does not significantly differ from testing other types of applications.
+O teste unitário de uma aplicação Vue não difere significativamente do teste de outros tipos de aplicações.
 
-### Choosing Your Framework
+### Escolhendo o seu Framework
 
-Since unit testing advice is often framework-agnostic, here are some basic guidelines to keep in mind when evaluating which unit testing tool is best for your application.
+Dado que a recomendação de utilizar testes unitários geralmente é independente de framework, aqui estão algumas diretrizes básicas para se manter em mente ao avaliar qual ferramenta de testes unitários é melhor para sua aplicação.
 
-#### First-class error reporting
+#### Relatório de erros de primeira classe
 
-When tests fail, it is critical that your unit testing framework provides useful errors. This is the job of the assertion library. An assertion with high-quality error messages helps minimize the amount of time it takes to debug the problem. In addition to simply telling you what test is failing, assertion libraries provide context for why a test fails, e.g., what is expected vs what was received.
+Quando os testes falham, é fundamental que seu framework de testes unitários forneça erros úteis. Este é o trabalho da biblioteca de asserções. Uma asserção com mensagens de erro de alta qualidade ajuda a minimizar o tempo que leva para depurar o problema. Além de simplesmente dizer a você qual teste está falhando, as bibliotecas de asserção fornecem contexto para o motivo da falha de um teste, por exemplo, o que é esperado versus o que foi recebido.
 
-Some unit testing frameworks, like Jest, include assertion libraries. Others, like Mocha, require you to install assertion libraries separately (usually Chai).
+Alguns frameworks de testes unitários, como Jest, incluem bibliotecas de asserção. Outros, como o Mocha, exigem que você instale bibliotecas de asserção separadamente (geralmente Chai).
 
 #### Active community and team
 
